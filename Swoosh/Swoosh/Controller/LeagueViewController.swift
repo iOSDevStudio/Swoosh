@@ -18,10 +18,7 @@ class LeagueViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         player = Player()
-        
-        
     }
     
     @IBAction func onNextTapped(_ sender: Any) {
@@ -43,7 +40,7 @@ class LeagueViewController: UIViewController {
     }
     
     func selectLeague(leagueType: String) {
-        player.desireLeague = leagueType
+        player.desiredLeague = leagueType
         nextBtn.isEnabled = true
     }
     
