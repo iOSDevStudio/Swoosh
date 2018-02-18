@@ -156,6 +156,9 @@
                                         <state key="normal" title="MENS">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="New-4d-ogH" eventType="touchUpInside" id="Wn0-Zk-Jwa"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmj-YI-zuL" customClass="BorderButton" customModule="Swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="70" width="343" height="50"/>
@@ -168,6 +171,9 @@
                                         <state key="normal" title="WOMENS">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="New-4d-ogH" eventType="touchUpInside" id="CK8-w7-Icl"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbR-ss-LCd" customClass="BorderButton" customModule="Swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="140" width="343" height="50"/>
@@ -180,10 +186,13 @@
                                         <state key="normal" title="CO-ED">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="New-4d-ogH" eventType="touchUpInside" id="iZ1-N7-sVn"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLG-CQ-6Xd" customClass="BorderButton" customModule="Swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLG-CQ-6Xd" customClass="BorderButton" customModule="Swoosh" customModuleProvider="target">
                                 <rect key="frame" x="16" y="597" width="343" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40389052009999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -234,6 +243,7 @@
                         <viewLayoutGuide key="safeArea" id="bcg-9i-CBZ"/>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="mLG-CQ-6Xd" id="v1M-JT-JvO"/>
                         <segue destination="by9-Dp-t2f" kind="show" identifier="skillVCSegue" id="us6-Nc-XqX"/>
                     </connections>
                 </viewController>
@@ -347,6 +357,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xmj-Nf-ssg"/>
                     </view>
+                    <connections>
+                        <segue destination="New-4d-ogH" kind="show" identifier="leagueVCSegue" id="6Qd-SF-9SU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IOv-vm-KZX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -360,4 +373,8 @@
         <image name="swooshLogo" width="119" height="20"/>
         <image name="welcomeScreenBG" width="414" height="736"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="us6-Nc-XqX"/>
+        <segue reference="6Qd-SF-9SU"/>
+    </inferredMetricsTieBreakers>
 </document>

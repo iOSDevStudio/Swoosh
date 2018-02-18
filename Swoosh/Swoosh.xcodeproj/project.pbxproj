@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F571B7A32039356C00614BB7 /* LeagueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F571B7A22039356C00614BB7 /* LeagueViewController.swift */; };
 		F571B7A52039358A00614BB7 /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F571B7A42039358A00614BB7 /* SkillViewController.swift */; };
+		F571B7A720393C5D00614BB7 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F571B7A620393C5D00614BB7 /* Player.swift */; };
 		F5F9D778202FE2E30014479B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F9D777202FE2E30014479B /* AppDelegate.swift */; };
 		F5F9D77A202FE2E30014479B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F9D779202FE2E30014479B /* WelcomeViewController.swift */; };
 		F5F9D77D202FE2E30014479B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F9D77B202FE2E30014479B /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		F571B7A22039356C00614BB7 /* LeagueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewController.swift; sourceTree = "<group>"; };
 		F571B7A42039358A00614BB7 /* SkillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillViewController.swift; sourceTree = "<group>"; };
+		F571B7A620393C5D00614BB7 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		F5F9D774202FE2E30014479B /* Swoosh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swoosh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F9D777202FE2E30014479B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5F9D779202FE2E30014479B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		F571B79F2039344E00614BB7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F571B7A620393C5D00614BB7 /* Player.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				F5F9D778202FE2E30014479B /* AppDelegate.swift in Sources */,
 				F571B7A52039358A00614BB7 /* SkillViewController.swift in Sources */,
 				F5F9D78B202FEBDA0014479B /* BorderButton.swift in Sources */,
+				F571B7A720393C5D00614BB7 /* Player.swift in Sources */,
 				F571B7A32039356C00614BB7 /* LeagueViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
